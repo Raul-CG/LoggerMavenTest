@@ -16,6 +16,8 @@ public class Main {
 		Main.logger.warn("We've just greeted the user!");
 		Main.logger.error("We've just greeted the user!");
 		Main.logger.fatal("We've just greeted the user!");
+
+
 	}
 
 }
