@@ -10,13 +10,12 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Hello World ?");
 
-		Main.logger.trace("We've just greeted the user!");
-		Main.logger.debug("We've just greeted the user!");
-		Main.logger.info("We've just greeted the user!");
-		Main.logger.warn("We've just greeted the user!");
-		Main.logger.error("We've just greeted the user!");
-		Main.logger.fatal("We've just greeted the user!");
-
+		Main.logger.trace("Logger: trace");
+		Main.logger.debug("Logger: debug");
+		Main.logger.info("Logger: info");
+		Main.logger.warn("Logger: warning");
+		Main.logger.error("Logger: normal error");
+		Main.logger.fatal("Logger: fatal error");
 
 	}
 
