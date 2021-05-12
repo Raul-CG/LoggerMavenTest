@@ -1,22 +1,37 @@
 package com.raul;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
 public class Main {
 
-	private static final Logger logger = LogManager.getLogger(Main.class);
+	private static Logger logger = Logger.getLogger(Main.class);
 
 	public static void main(String[] args) {
-		System.out.println("Hello World ?");
 
-		Main.logger.trace("Logger: trace");
-		Main.logger.debug("Logger: debug");
-		Main.logger.info("Logger: info");
-		Main.logger.warn("Logger: warning");
-		Main.logger.error("Logger: normal error");
-		Main.logger.fatal("Logger: fatal error");
+		Main.logger.setLevel(Level.TRACE);
+		Main.logger.trace("Trace Message!");
+		Main.logger.debug("Debug Message!");
+		Main.logger.info("Info Message!");
+		Main.logger.warn("Warn Message!");
+		Main.logger.error("Error Message!");
+		Main.logger.fatal("Fatal Message!");
 
+		Main.logger.setLevel(Level.INFO);
+		Main.logger.trace("Trace Message!");
+		Main.logger.debug("Debug Message!");
+		Main.logger.info("Info Message!");
+		Main.logger.warn("Warn Message!");
+		Main.logger.error("Error Message!");
+		Main.logger.fatal("Fatal Message!");
+
+		Main.logger.setLevel(Level.FATAL);
+		Main.logger.trace("Trace Message!");
+		Main.logger.debug("Debug Message!");
+		Main.logger.info("Info Message!");
+		Main.logger.warn("Warn Message!");
+		Main.logger.error("Error Message!");
+		Main.logger.fatal("Fatal Message!");
 	}
 
 }
